@@ -1,0 +1,9 @@
+{
+    "path" : "~/GitHub/ScrapeRestrauntReviews",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+library(RSelenium)
+library(tidyverse)
+library(xml2)
+library(purrr)
+
+URL <- "https://inspections.myhealthdepartment.com/tennessee"
+driver <- rsDriver(browser = "chrome")
