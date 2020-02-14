@@ -1,0 +1,17 @@
+# Load Dependencies 
+library(RSelenium)
+library(tidyverse)
+library(xml2)
+library(purrr)
+library(rvest)
+URL <- "https://inspections.myhealthdepartment.com/tennessee"
+
+#In the terminal we've run: docker run -d -p 4445:4444 selenium/standalone-chrome
+#Then Run: docker ps 
+remDr <- RSelenium::remoteDriver(remoteServerAddr = "localhost",
+                                 port = 4445L,
+                                 browserName = "chrome")
+remDr$open()
+remDr$navigate("https://inspections.myhealthdepartment.com/tennessee")
+remDr$screenshot(display = TRUE)
+# If this pulls up the website your looking for CELEBRATE!!! 
